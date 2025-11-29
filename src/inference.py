@@ -8,8 +8,7 @@ from .config import TRANSFORMER_NAME, LABELS, DEVICE
 tokenizer = AutoTokenizer.from_pretrained(TRANSFORMER_NAME)
 model = load_transformer(TRANSFORMER_NAME, len(LABELS))
 
-model_path = os.path.join(os.path.dirname(__file__), "..", "saved_models", "roberta_single_state.pth")
-
+model_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "saved_models", "roberta_single_state.pth"))
 # Load trained weights
 model.load_state_dict(torch.load(model_path, map_location=DEVICE))
 model.to(DEVICE)
