@@ -1,0 +1,22 @@
+# Core
+numpy>=1.24
+pandas>=1.5
+scikit-learn>=1.2
+tqdm>=4.65
+
+# PyTorch 
+torch>=2.0
+torchvision>=0.15  
+
+# Transformers
+transformers>=4.30
+
+# Inference / Serving
+gradio>=3.30
+
+# Misc
+pytest>=7.0
+sentencepiece>=0.1.98
+
+# Optional
+wandb>=0.15
