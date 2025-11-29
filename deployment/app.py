@@ -5,7 +5,7 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import gradio as gr
-from inference import predict
+from src.inference import predict
 
 def classify(text):
     return predict(text)
