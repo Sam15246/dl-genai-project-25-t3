@@ -1,7 +1,7 @@
 import torch
 from transformers import AutoTokenizer
-from models.transformer_model import load_transformer
-from config import TRANSFORMER_NAME, LABELS, DEVICE
+from .models.transformer_model import load_transformer
+from .config import TRANSFORMER_NAME, LABELS, DEVICE
 
 # Load tokenizer + model
 tokenizer = AutoTokenizer.from_pretrained(TRANSFORMER_NAME)
